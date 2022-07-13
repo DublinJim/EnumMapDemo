@@ -1,19 +1,18 @@
 package com.jamesMkeogh;
 
 
-
 import java.util.EnumMap;
 
 public class Main {
 
     public static void main(String[] args) {
-        EnumMap<CalYear,String> enumMap = new EnumMap<CalYear,String>(CalYear.class);
+        EnumMap<CalYear, String> enumMap = new EnumMap<>(CalYear.class);
 
-        enumMap.put(CalYear.AUG,"Still Hot");
-        enumMap.put(CalYear.JAN,"Cold");
-        enumMap.put(CalYear.JUNE,"Hot");
+        enumMap.put(CalYear.AUG, "Still Hot");
+        enumMap.put(CalYear.JAN, "Cold");
+        enumMap.put(CalYear.JUNE, null);
 
-        System.out.println("the map has "+enumMap);
+        System.out.println("the map has " + enumMap);
     }
 
 }
